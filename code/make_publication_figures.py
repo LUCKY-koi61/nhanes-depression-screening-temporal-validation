@@ -697,7 +697,11 @@ def draw_figureS1(data: dict) -> plt.Figure:
 
     rule = pd.DataFrame(data["ltt"]["0.1"])
     logit = data["logit"]
-    figure, axes = plt.subplots(1, 3, figsize=(WIDE_IN, 2.8))
+    # The two multi-series panels use compact, below-axis legends.  Keeping
+    # legends out of the plotting area matters here: at final manuscript size
+    # an in-panel legend either masks the 2011--2015 values or dominates the
+    # data.  A slightly taller canvas preserves readable 7-pt lettering.
+    figure, axes = plt.subplots(1, 3, figsize=(WIDE_IN, 3.35))
 
     # --- A: the share the rule exempts ------------------------------------
     axes[0].plot(rule.cycle, rule.approve_pct, "o-", color=C_REFERENCE, lw=1.4,
@@ -708,49 +712,55 @@ def draw_figureS1(data: dict) -> plt.Figure:
     axes[0].set_xticks(CYCLES)
     axes[0].set_ylabel("Percent of population")
     panel_title(axes[0], "Exempted share (\u03c4 = 10% rule)")
-    axes[0].legend(fontsize=9.0, loc="center left")
-    axes[0].text(2009.2, 11.4, "cap 10%", fontsize=9.0, color=MUT, ha="left",
+    # Panel A has only one series, so a direct label is clearer than a legend.
+    axes[0].text(2009.2, 54, "Exempted from review", fontsize=7.2,
+                 color=C_REFERENCE, ha="left", va="center")
+    axes[0].text(2009.2, 11.4, "cap 10%", fontsize=7.0, color=MUT, ha="left",
                  va="bottom")
     axes[0].grid(axis="x", visible=False)
 
     # --- B: the two case-finding series, on their own scale ---------------
     axes[1].plot(rule.cycle, rule.obs_dep_approved * 100, "s--", color=C_AUDIT,
-                 lw=1.4, ms=3.6, label="Exempt-group rate")
+                 lw=1.4, ms=3.6, label="Exempted-group rate")
     axes[1].plot(rule.cycle, rule.positives_in_review, "^:", color=C_REFRESH,
-                 lw=1.4, ms=4.0, label="Cases in review pool")
+                 lw=1.4, ms=4.0, label="Cases retained for review")
     axes[1].axhline(10, color=MUT, lw=0.7, ls="-.")
     axes[1].set_ylim(0, 32)
     axes[1].set_xlim(2008.6, 2017.9)
     axes[1].set_xticks(CYCLES)
     axes[1].set_ylabel("Percent")
     panel_title(axes[1], "Case finding under the same rule")
-    axes[1].legend(fontsize=9.0, loc="upper right")
+    axes[1].legend(fontsize=6.8, loc="upper center", ncol=1,
+                   bbox_to_anchor=(0.5, -0.25), borderaxespad=0.1,
+                   handletextpad=0.45, labelspacing=0.25)
     axes[1].grid(axis="x", visible=False)
 
     # --- C: model-class robustness --------------------------------------
     for arm, style, colour, label in [
-        ("logit_dep10", "o-", C_REFERENCE, "Logistic, PHQ-9 \u2265 10"),
-        ("logit_dep5", "s--", C_REFERENCE, "Logistic, PHQ-9 \u2265 5"),
+        ("logit_dep10", "o-", C_REFERENCE, "Logistic / \u2265 10"),
+        ("logit_dep5", "s--", C_REFERENCE, "Logistic / \u2265 5"),
     ]:
         series = pd.DataFrame(logit[arm])
         axes[2].plot(series.cycle, series.logit_fixed_auc, style, color=colour,
                      lw=1.4, ms=3.6, label=label)
     axes[2].plot(data["d10"].cycle, data["d10"].fixed_auc, "^:", color=C_AUDIT,
-                 lw=1.4, ms=4.0, alpha=0.85, label="LightGBM, PHQ-9 \u2265 10")
+                 lw=1.4, ms=4.0, alpha=0.85, label="LightGBM / \u2265 10")
     axes[2].plot(data["d5"].cycle, data["d5"].fixed_auc, "v:", color=C_AUDIT,
-                 lw=1.4, ms=4.0, alpha=0.85, label="LightGBM, PHQ-9 \u2265 5")
+                 lw=1.4, ms=4.0, alpha=0.85, label="LightGBM / \u2265 5")
     axes[2].set_xticks(CYCLES)
     axes[2].set_ylim(0.55, 0.80)
     axes[2].set_ylabel("Fixed-model AUC")
     panel_title(axes[2], "AUC by model class")
-    axes[2].legend(fontsize=9.0, loc="upper center", ncol=1,
-                   bbox_to_anchor=(0.5, -0.20), borderaxespad=0.2)
+    axes[2].legend(fontsize=6.7, loc="upper center", ncol=2,
+                   bbox_to_anchor=(0.5, -0.25), borderaxespad=0.1,
+                   handletextpad=0.4, columnspacing=0.75, labelspacing=0.25)
     axes[2].grid(axis="x", visible=False)
 
     for axis, letter in zip(axes, "ABC"):
         axis.text(-0.30, 1.18, letter, transform=axis.transAxes, fontsize=8,
                   fontweight="bold", color=INK, va="bottom")
-    figure.tight_layout(w_pad=1.6)
+    figure.subplots_adjust(left=0.075, right=0.99, top=0.84, bottom=0.33,
+                            wspace=0.46)
     return figure
 
 

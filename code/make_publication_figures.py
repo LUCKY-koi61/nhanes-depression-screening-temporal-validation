@@ -368,84 +368,84 @@ def mark_external(axis) -> None:
 def _prevalence_panel(axis, frame, label):
     series = frame[~frame.external]
     external = frame[frame.external]
-    axis.plot(series.x, series.prev_w * 100, "o-", color=C_REFERENCE, lw=1.4, ms=3.6,
+    axis.plot(series.x, series.prev_w * 100, "o-", color=C_REFERENCE, lw=1.65, ms=4.1,
               label="Observed")
-    axis.plot(series.x, series.fixed_mpred * 100, "o-", color=C_AUDIT, lw=1.4,
-              ms=3.6, label="Fixed model (2007\u201308)")
-    axis.plot(external.x, external.prev_w * 100, "o", color=C_REFERENCE, ms=4.4,
-              mfc="white", mew=1.2)
+    axis.plot(series.x, series.fixed_mpred * 100, "o-", color=C_AUDIT, lw=1.65,
+              ms=4.1, label="Fixed model (2007\u201308)")
+    axis.plot(external.x, external.prev_w * 100, "o", color=C_REFERENCE, ms=5.0,
+              mfc="white", mew=1.35)
     # The post-pandemic cycle is not on the same measurement footing as the
     # standard series, so it is drawn as a detached symbol rather than joined
     # to the last standard point.
 
-    axis.plot(external.x, external.fixed_mpred * 100, "o", color=C_AUDIT, ms=4.4,
-              mfc="white", mew=1.2)
-    axis.plot(series.x, series.dev_cv_prediction * 100, ":", color=C_AUDIT, lw=1.2,
+    axis.plot(external.x, external.fixed_mpred * 100, "o", color=C_AUDIT, ms=5.0,
+              mfc="white", mew=1.35)
+    axis.plot(series.x, series.dev_cv_prediction * 100, ":", color=C_AUDIT, lw=1.4,
               label="Fixed model, development cross-validation")
 
     mark_external(axis)
     axis.set_xticks(range(len(CYCLE_TICKS)))
-    axis.set_xticklabels(SHORT_CYCLE_TICKS, fontsize=7.5)
-    axis.set_ylabel("Prevalence (%)")
+    axis.set_xticklabels(SHORT_CYCLE_TICKS, fontsize=8.3)
+    axis.set_ylabel("Prevalence (%)", fontsize=9.5)
 
 
 def _discrimination_panel(axis, frame, label):
     series = frame[~frame.external]
     external = frame[frame.external]
-    axis.plot(series.x, series.fixed_auc, "o-", color=C_AUDIT, lw=1.4, ms=3.6,
+    axis.plot(series.x, series.fixed_auc, "o-", color=C_AUDIT, lw=1.65, ms=4.1,
               label="Fixed")
-    axis.plot(series.x, series.rolling_auc, "s--", color=C_REFRESH, lw=1.4, ms=3.6,
+    axis.plot(series.x, series.rolling_auc, "s--", color=C_REFRESH, lw=1.65, ms=4.1,
               label="Retrained")
-    axis.plot(external.x, external.fixed_auc, "o", color=C_AUDIT, ms=4.4, mfc="white",
-              mew=1.2)
-    axis.plot(external.x, external.rolling_auc, "s", color=C_REFRESH, ms=4.4,
+    axis.plot(external.x, external.fixed_auc, "o", color=C_AUDIT, ms=5.0, mfc="white",
+              mew=1.35)
+    axis.plot(external.x, external.rolling_auc, "s", color=C_REFRESH, ms=5.0,
               mfc="white",
-              mew=1.2)
+              mew=1.35)
     mark_external(axis)
     axis.set_xticks(range(len(CYCLE_TICKS)))
-    axis.set_xticklabels(SHORT_CYCLE_TICKS, fontsize=7.5)
+    axis.set_xticklabels(SHORT_CYCLE_TICKS, fontsize=8.3)
     axis.set_ylim(0.55, 0.82)
-    axis.set_ylabel("Weighted AUC")
+    axis.set_ylabel("Weighted AUC", fontsize=9.5)
 
 
 def _calibration_panel(axis, frame, label):
     series = frame[~frame.external]
     external = frame[frame.external]
-    axis.plot(series.x, series.fixed_ece, "o-", color=C_AUDIT, lw=1.4, ms=3.6,
+    axis.plot(series.x, series.fixed_ece, "o-", color=C_AUDIT, lw=1.65, ms=4.1,
               label="Fixed")
-    axis.plot(series.x, series.recal_ece, "^-", color=C_REPAIR, lw=1.4, ms=4.0,
+    axis.plot(series.x, series.recal_ece, "^-", color=C_REPAIR, lw=1.65, ms=4.6,
               label="Recalibrated")
-    axis.plot(series.x, series.rolling_ece, "s--", color=C_REFRESH, lw=1.4, ms=3.6,
+    axis.plot(series.x, series.rolling_ece, "s--", color=C_REFRESH, lw=1.65, ms=4.1,
               label="Retrained")
-    axis.plot(external.x, external.fixed_ece, "o", color=C_AUDIT, ms=4.4, mfc="white",
-              mew=1.2)
-    axis.plot(external.x, external.recal_ece, "^", color=C_REPAIR, ms=4.8,
+    axis.plot(external.x, external.fixed_ece, "o", color=C_AUDIT, ms=5.0, mfc="white",
+              mew=1.35)
+    axis.plot(external.x, external.recal_ece, "^", color=C_REPAIR, ms=5.4,
               mfc="white",
-              mew=1.2)
-    axis.plot(external.x, external.rolling_ece, "s", color=C_REFRESH, ms=4.4,
+              mew=1.35)
+    axis.plot(external.x, external.rolling_ece, "s", color=C_REFRESH, ms=5.0,
               mfc="white",
-              mew=1.2)
+              mew=1.35)
     mark_external(axis)
     axis.set_xticks(range(len(CYCLE_TICKS)))
-    axis.set_xticklabels(SHORT_CYCLE_TICKS, fontsize=7.5)
-    axis.set_ylabel("Expected calibration error")
+    axis.set_xticklabels(SHORT_CYCLE_TICKS, fontsize=8.3)
+    axis.set_ylabel("Expected calibration error", fontsize=9.5)
 
 
 def draw_figure2(data: dict) -> plt.Figure:
     """Small multiples with conclusion-led rows and row-specific shared keys."""
 
-    figure, axes = plt.subplots(3, 2, figsize=(WIDE_IN, 7.2))
+    figure, axes = plt.subplots(3, 2, figsize=(WIDE_IN, 7.8))
     for column, endpoint in enumerate(("dep10", "dep5")):
         frame = performance_frame(data, endpoint)
         _prevalence_panel(axes[0, column], frame, None)
         _discrimination_panel(axes[1, column], frame, None)
         _calibration_panel(axes[2, column], frame, None)
     figure.subplots_adjust(left=0.085, right=0.985, top=0.865, bottom=0.075,
-                           hspace=0.90, wspace=0.95)
+                           hspace=0.98, wspace=0.95)
     figure.text(
         0.085, 0.985,
         "Diagnostic high-complexity model: temporal performance",
-        ha="left", va="top", fontsize=10.0, fontweight="bold", color=INK,
+        ha="left", va="top", fontsize=11.5, fontweight="bold", color=INK,
     )
 
     positions = [[axis.get_position() for axis in row] for row in axes]
@@ -454,7 +454,7 @@ def draw_figure2(data: dict) -> plt.Figure:
     ):
         position = positions[0][column]
         figure.text((position.x0 + position.x1) / 2, 0.925, label,
-                    ha="center", va="bottom", fontsize=8.5, fontweight="bold", color=SEC)
+                    ha="center", va="bottom", fontsize=9.7, fontweight="bold", color=SEC)
     row_claims = (
         "Underprediction was already evident at development",
         "Ranking changed non-monotonically",
@@ -463,12 +463,12 @@ def draw_figure2(data: dict) -> plt.Figure:
     for row, claim in enumerate(row_claims):
         position = positions[row][0]
         figure.text(position.x0, position.y1 + 0.017, claim,
-                    fontsize=8.5, fontweight="bold", color=INK, ha="left", va="bottom")
+                    fontsize=9.5, fontweight="bold", color=INK, ha="left", va="bottom")
     for row, letters in enumerate((("A", "D"), ("B", "E"), ("C", "F"))):
         for column, letter in enumerate(letters):
             axes[row, column].text(0.02, 0.96, letter,
                                    transform=axes[row, column].transAxes,
-                                   fontsize=7.5, fontweight="bold", color=INK,
+                                   fontsize=8.5, fontweight="bold", color=INK,
                                    ha="left", va="top")
 
     external_x = figure.transFigure.inverted().transform(
@@ -476,28 +476,28 @@ def draw_figure2(data: dict) -> plt.Figure:
     )[0]
     figure.text(external_x, positions[0][1].y1 + 0.018,
                 "2021–2023‡ reduced-predictor stress test",
-                ha="center", va="bottom", fontsize=6.8, color=MUT)
+                ha="center", va="bottom", fontsize=7.6, color=MUT)
 
     prevalence_handles = [
-        Line2D([], [], color=C_REFERENCE, marker="o", ls="-", ms=3.6, lw=1.4,
+        Line2D([], [], color=C_REFERENCE, marker="o", ls="-", ms=4.1, lw=1.65,
                label="Observed prevalence"),
-        Line2D([], [], color=C_AUDIT, marker="o", ls="-", ms=3.6, lw=1.4,
+        Line2D([], [], color=C_AUDIT, marker="o", ls="-", ms=4.1, lw=1.65,
                label="Fixed model"),
-        Line2D([], [], color=C_AUDIT, ls=":", lw=1.2,
+        Line2D([], [], color=C_AUDIT, ls=":", lw=1.4,
                label="Development cross-validation baseline"),
     ]
     discrimination_handles = [
-        Line2D([], [], color=C_AUDIT, marker="o", ls="-", ms=3.6, lw=1.4,
+        Line2D([], [], color=C_AUDIT, marker="o", ls="-", ms=4.1, lw=1.65,
                label="Fixed model"),
-        Line2D([], [], color=C_REFRESH, marker="s", ls="--", ms=3.6, lw=1.4,
+        Line2D([], [], color=C_REFRESH, marker="s", ls="--", ms=4.1, lw=1.65,
                label="Retrained model"),
     ]
     calibration_handles = [
-        Line2D([], [], color=C_AUDIT, marker="o", ls="-", ms=3.6, lw=1.4,
+        Line2D([], [], color=C_AUDIT, marker="o", ls="-", ms=4.1, lw=1.65,
                label="Fixed model"),
-        Line2D([], [], color=C_REPAIR, marker="^", ls="-", ms=4.0, lw=1.4,
+        Line2D([], [], color=C_REPAIR, marker="^", ls="-", ms=4.6, lw=1.65,
                label="Recalibrated"),
-        Line2D([], [], color=C_REFRESH, marker="s", ls="--", ms=3.6, lw=1.4,
+        Line2D([], [], color=C_REFRESH, marker="s", ls="--", ms=4.1, lw=1.65,
                label="Retrained model"),
     ]
     legend_ys = [
@@ -508,7 +508,7 @@ def draw_figure2(data: dict) -> plt.Figure:
     for handles, legend_y in zip(
         (prevalence_handles, discrimination_handles, calibration_handles), legend_ys
     ):
-        figure.legend(handles=handles, loc="center", ncol=len(handles), fontsize=7.3,
+        figure.legend(handles=handles, loc="center", ncol=len(handles), fontsize=8.2,
                       frameon=False, bbox_to_anchor=(0.53, legend_y),
                       bbox_transform=figure.transFigure, handletextpad=0.5,
                       columnspacing=2.0)

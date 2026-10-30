@@ -1,0 +1,84 @@
+{
+ "pooled_adults_18plus": 36580,
+ "excluded_no_complete_phq9": 4969,
+ "complete_phq9": 31611,
+ "excluded_incomplete_covariates": 4830,
+ "analytic_panel": 26781,
+ "development_cycle_n": 4652,
+ "development_cycle_label": "2007-2008",
+ "test_cycles_n": 22129,
+ "cycles": [
+  {
+   "cycle": "2007-2008",
+   "n": 4652
+  },
+  {
+   "cycle": "2009-2010",
+   "n": 4773
+  },
+  {
+   "cycle": "2011-2012",
+   "n": 4221
+  },
+  {
+   "cycle": "2013-2014",
+   "n": 4638
+  },
+  {
+   "cycle": "2015-2016",
+   "n": 4342
+  },
+  {
+   "cycle": "2017-2018",
+   "n": 4155
+  }
+ ],
+ "per_cycle_counts": [
+  {
+   "cycle": "2007-2008",
+   "adults_18plus": 6228,
+   "phq9_complete": 5447,
+   "analytic": 4652
+  },
+  {
+   "cycle": "2009-2010",
+   "adults_18plus": 6527,
+   "phq9_complete": 5576,
+   "analytic": 4773
+  },
+  {
+   "cycle": "2011-2012",
+   "adults_18plus": 5864,
+   "phq9_complete": 4944,
+   "analytic": 4221
+  },
+  {
+   "cycle": "2013-2014",
+   "adults_18plus": 6113,
+   "phq9_complete": 5393,
+   "analytic": 4638
+  },
+  {
+   "cycle": "2015-2016",
+   "adults_18plus": 5992,
+   "phq9_complete": 5161,
+   "analytic": 4342
+  },
+  {
+   "cycle": "2017-2018",
+   "adults_18plus": 5856,
+   "phq9_complete": 5090,
+   "analytic": 4155
+  }
+ ],
+ "dpq100_rule": {
+  "would_drop": 8802,
+  "share_of_records_pct": 32.9,
+  "share_of_weighted_population_pct": 32.1,
+  "nine_item_score_zero": 8800,
+  "share_of_dropped_with_zero_score_pct": 99.98,
+  "mean_nine_item_score": 0.002,
+  "cases_lost": 1,
+  "cases_total": 2425
+ }
+}

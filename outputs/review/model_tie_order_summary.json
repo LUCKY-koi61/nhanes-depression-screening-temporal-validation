@@ -1,0 +1,13 @@
+{
+  "specification": "existing development-selected settings; no selection rerun",
+  "existing_main_capture_reproduced": true,
+  "corrected_allocation_matches_fixed_order_in_all_replicates": true,
+  "audit": "old retained-row argsort versus filtering a fixed full-sample order",
+  "model_capacity_rows": 100,
+  "contrast_rows": 50,
+  "replicates_with_changed_selection": 15,
+  "max_capture_difference_pp": 0.3367762890072207,
+  "max_interval_change_pp": 0.07145747429027904,
+  "temporary_prediction_cache": "/var/folders/2j/17z_tjjx58j1bv8l7_0c1f800000gn/T/jad-frozen-score-audit-cwlinjsm",
+  "scope": "both regularised endpoints, five evaluations, four record capacities and exact 10% population capacity; fitted scores held fixed"
+}

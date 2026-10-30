@@ -1,0 +1,16 @@
+{
+  "stage": "post-review, not preregistered",
+  "benchmark_rule": "income-to-poverty ascending; ties by SEQN ascending",
+  "reason": "outcome-independent reproducible allocation, not significance selection",
+  "sensitivity_rules": [
+    "seqn_ascending",
+    "seqn_descending",
+    "equal_fraction",
+    "historical_numpy"
+  ],
+  "model_record_rule": "historical fitted-score ranking retained",
+  "population_capacity": "exact 10% weighted mass, fractional boundary record",
+  "inference": "stratified delete-one-PSU jackknife, design-df t",
+  "models": "fixed during replication; development-selected settings unchanged",
+  "training_uncertainty_included": false
+}

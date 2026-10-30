@@ -1,0 +1,8 @@
+{
+  "status": "post-review sensitivity analyses",
+  "inference": "stratified delete-one-PSU jackknife, t interval with PSU-minus-strata df",
+  "models_held_fixed": true,
+  "population_capacity": "exact weighted decile with fractional boundary allocation",
+  "regularisation_selection": "development-only PSU-grouped Brier selection; nested internal validation",
+  "no_future_labels_for_selection": true
+}

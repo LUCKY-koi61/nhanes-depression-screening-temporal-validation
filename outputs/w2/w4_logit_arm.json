@@ -1,0 +1,76 @@
+{
+ "logit_dep10": [
+  {
+   "cycle": 2009,
+   "logit_fixed_auc": 0.611,
+   "logit_fixed_ece": 0.01,
+   "logit_roll_auc": 0.611,
+   "logit_roll_ece": 0.01
+  },
+  {
+   "cycle": 2011,
+   "logit_fixed_auc": 0.626,
+   "logit_fixed_ece": 0.006,
+   "logit_roll_auc": 0.626,
+   "logit_roll_ece": 0.005
+  },
+  {
+   "cycle": 2013,
+   "logit_fixed_auc": 0.636,
+   "logit_fixed_ece": 0.012,
+   "logit_roll_auc": 0.636,
+   "logit_roll_ece": 0.011
+  },
+  {
+   "cycle": 2015,
+   "logit_fixed_auc": 0.59,
+   "logit_fixed_ece": 0.009,
+   "logit_roll_auc": 0.59,
+   "logit_roll_ece": 0.009
+  },
+  {
+   "cycle": 2017,
+   "logit_fixed_auc": 0.587,
+   "logit_fixed_ece": 0.013,
+   "logit_roll_auc": 0.587,
+   "logit_roll_ece": 0.008
+  }
+ ],
+ "logit_dep5": [
+  {
+   "cycle": 2009,
+   "logit_fixed_auc": 0.578,
+   "logit_fixed_ece": 0.009,
+   "logit_roll_auc": 0.578,
+   "logit_roll_ece": 0.009
+  },
+  {
+   "cycle": 2011,
+   "logit_fixed_auc": 0.594,
+   "logit_fixed_ece": 0.012,
+   "logit_roll_auc": 0.607,
+   "logit_roll_ece": 0.014
+  },
+  {
+   "cycle": 2013,
+   "logit_fixed_auc": 0.582,
+   "logit_fixed_ece": 0.013,
+   "logit_roll_auc": 0.587,
+   "logit_roll_ece": 0.01
+  },
+  {
+   "cycle": 2015,
+   "logit_fixed_auc": 0.578,
+   "logit_fixed_ece": 0.017,
+   "logit_roll_auc": 0.586,
+   "logit_roll_ece": 0.01
+  },
+  {
+   "cycle": 2017,
+   "logit_fixed_auc": 0.579,
+   "logit_fixed_ece": 0.028,
+   "logit_roll_auc": 0.578,
+   "logit_roll_ece": 0.02
+  }
+ ]
+}

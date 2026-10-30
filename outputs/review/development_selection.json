@@ -1,0 +1,166 @@
+{
+  "dep10": {
+    "selected": {
+      "n_estimators": 200,
+      "learning_rate": 0.03,
+      "num_leaves": 7,
+      "min_child_samples": 80,
+      "reg_lambda": 10
+    },
+    "brier_by_candidate": [
+      0.06509363527607508,
+      0.06463125037820135,
+      0.0654664874175346,
+      0.06576975799346403
+    ],
+    "candidates": [
+      {
+        "n_estimators": 100,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 100,
+        "learning_rate": 0.03,
+        "num_leaves": 15,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 15,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      }
+    ],
+    "outer_selections": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 100,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      }
+    ]
+  },
+  "dep5": {
+    "selected": {
+      "n_estimators": 200,
+      "learning_rate": 0.03,
+      "num_leaves": 7,
+      "min_child_samples": 80,
+      "reg_lambda": 10
+    },
+    "brier_by_candidate": [
+      0.161894604273244,
+      0.16099710969545386,
+      0.16258816039409124,
+      0.16310165807950486
+    ],
+    "candidates": [
+      {
+        "n_estimators": 100,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 100,
+        "learning_rate": 0.03,
+        "num_leaves": 15,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 15,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      }
+    ],
+    "outer_selections": [
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      },
+      {
+        "n_estimators": 200,
+        "learning_rate": 0.03,
+        "num_leaves": 7,
+        "min_child_samples": 80,
+        "reg_lambda": 10
+      }
+    ]
+  }
+}

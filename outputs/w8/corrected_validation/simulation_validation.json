@@ -1,0 +1,90 @@
+{
+ "A_scalar_truth": {
+  "expect_scalar_rejected": false,
+  "expect_metric_rejected": false,
+  "BIC_order": {
+   "configural": 45070.3,
+   "metric": 44999.7,
+   "scalar": 44774.0
+  },
+  "BIC_best": "scalar",
+  "best_partial_model": "none",
+  "top_single_item_releases": [
+   "I2",
+   "I0"
+  ],
+  "metric_sd_recovery": [
+   1.0,
+   1.038,
+   1.043
+  ],
+  "scalar_latent_mean_recovery": [
+   0.0,
+   0.374,
+   -0.178
+  ],
+  "max_abs_slope_error_configural": 0.284,
+  "max_abs_threshold_error_configural": 0.491,
+  "verdict": "pass",
+  "expected": "scalar"
+ },
+ "B_scalar_unequal_variance_truth": {
+  "expect_scalar_rejected": false,
+  "expect_metric_rejected": false,
+  "BIC_order": {
+   "configural": 47035.1,
+   "metric": 46965.4,
+   "scalar": 46722.8
+  },
+  "BIC_best": "scalar",
+  "best_partial_model": "none",
+  "top_single_item_releases": [
+   "I3",
+   "I4"
+  ],
+  "metric_sd_recovery": [
+   1.0,
+   1.368,
+   0.818
+  ],
+  "scalar_latent_mean_recovery": [
+   0.0,
+   -0.011,
+   0.023
+  ],
+  "max_abs_slope_error_configural": 0.783,
+  "max_abs_threshold_error_configural": 0.408,
+  "verdict": "pass",
+  "expected": "scalar"
+ },
+ "C_dif_truth": {
+  "expect_scalar_rejected": true,
+  "expect_metric_rejected": false,
+  "BIC_order": {
+   "configural": 50411.8,
+   "metric": 50336.8,
+   "scalar": 50527.6
+  },
+  "BIC_best": "metric",
+  "best_partial_model": "I2",
+  "top_single_item_releases": [
+   "I2",
+   "I1"
+  ],
+  "metric_sd_recovery": [
+   1.0,
+   0.942,
+   0.948
+  ],
+  "scalar_latent_mean_recovery": [
+   0.0,
+   -0.166,
+   -0.144
+  ],
+  "max_abs_slope_error_configural": 0.175,
+  "max_abs_threshold_error_configural": 0.944,
+  "verdict": "pass",
+  "expected": "partial"
+ },
+ "all_passed": true
+}

@@ -1,0 +1,92 @@
+{
+ "dep10": {
+  "observed": 0.07977874662258146,
+  "cv_mean_prediction": 0.057710463935149475,
+  "cv_gap_pp": 2.206828268743198,
+  "cv_ece": 0.047755372258279256,
+  "cv_auc": 0.7126760507667084,
+  "cv_capture": 0.2627667405548946,
+  "evaluation_cycles": {
+   "2009": {
+    "observed": 0.0779,
+    "fixed_mean_prediction": 0.0593,
+    "fixed_gap_pp": 1.8599999999999999,
+    "gap_minus_development_pp": -0.3468282687431983,
+    "fixed_ece": 0.045
+   },
+   "2011": {
+    "observed": 0.0795,
+    "fixed_mean_prediction": 0.0558,
+    "fixed_gap_pp": 2.37,
+    "gap_minus_development_pp": 0.16317173125680196,
+    "fixed_ece": 0.038
+   },
+   "2013": {
+    "observed": 0.0866,
+    "fixed_mean_prediction": 0.0599,
+    "fixed_gap_pp": 2.6699999999999995,
+    "gap_minus_development_pp": 0.46317173125680133,
+    "fixed_ece": 0.058
+   },
+   "2015": {
+    "observed": 0.0734,
+    "fixed_mean_prediction": 0.0492,
+    "fixed_gap_pp": 2.420000000000001,
+    "gap_minus_development_pp": 0.21317173125680267,
+    "fixed_ece": 0.047
+   },
+   "2017": {
+    "observed": 0.0821,
+    "fixed_mean_prediction": 0.05,
+    "fixed_gap_pp": 3.2100000000000004,
+    "gap_minus_development_pp": 1.0031717312568023,
+    "fixed_ece": 0.059
+   }
+  }
+ },
+ "dep5": {
+  "observed": 0.23276424700220796,
+  "cv_mean_prediction": 0.21265049971489391,
+  "cv_gap_pp": 2.011374728731405,
+  "cv_ece": 0.08446972142391553,
+  "cv_auc": 0.6500609213074737,
+  "cv_capture": 0.17720071296576403,
+  "evaluation_cycles": {
+   "2009": {
+    "observed": 0.2354,
+    "fixed_mean_prediction": 0.2125,
+    "fixed_gap_pp": 2.2900000000000005,
+    "gap_minus_development_pp": 0.2786252712685955,
+    "fixed_ece": 0.08
+   },
+   "2011": {
+    "observed": 0.2191,
+    "fixed_mean_prediction": 0.2123,
+    "fixed_gap_pp": 0.68,
+    "gap_minus_development_pp": -1.3313747287314048,
+    "fixed_ece": 0.076
+   },
+   "2013": {
+    "observed": 0.2346,
+    "fixed_mean_prediction": 0.2146,
+    "fixed_gap_pp": 1.9999999999999991,
+    "gap_minus_development_pp": -0.011374728731405881,
+    "fixed_ece": 0.092
+   },
+   "2015": {
+    "observed": 0.2362,
+    "fixed_mean_prediction": 0.1999,
+    "fixed_gap_pp": 3.63,
+    "gap_minus_development_pp": 1.618625271268595,
+    "fixed_ece": 0.093
+   },
+   "2017": {
+    "observed": 0.2455,
+    "fixed_mean_prediction": 0.1966,
+    "fixed_gap_pp": 4.89,
+    "gap_minus_development_pp": 2.8786252712685947,
+    "fixed_ece": 0.094
+   }
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+  "model": "development-selected regularised LightGBM",
+  "capacities": [
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "benchmark": "income-to-poverty ratio ranked lowest first",
+  "random_benchmark": "expected capture equals record capacity",
+  "inference": "stratified delete-one-PSU jackknife; models held fixed"
+}

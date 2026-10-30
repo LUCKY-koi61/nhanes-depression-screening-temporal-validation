@@ -1,0 +1,119 @@
+{
+ "standard6": {
+  "n": 26798,
+  "n_by_cycle": {
+   "2007-2008": 4654,
+   "2009-2010": 4774,
+   "2011-2012": 4222,
+   "2013-2014": 4640,
+   "2015-2016": 4349,
+   "2017-2018": 4159
+  },
+  "convergence": {
+   "configural": {
+    "loglik": -143294.42238094995,
+    "iterations": 40,
+    "likelihood_decreases": 0,
+    "seconds": 104.5,
+    "history_tail": [
+     -143294.676387,
+     -143294.53274,
+     -143294.422381
+    ]
+   },
+   "metric": {
+    "loglik": -143337.237300595,
+    "iterations": 105,
+    "likelihood_decreases": 0,
+    "seconds": 1272.0,
+    "history_tail": [
+     -143337.521229,
+     -143337.376675,
+     -143337.237301
+    ]
+   },
+   "scalar": {
+    "loglik": -143454.18414263183,
+    "iterations": 10,
+    "likelihood_decreases": 0,
+    "seconds": 72.1,
+    "history_tail": [
+     -143454.460875,
+     -143454.31618,
+     -143454.184143
+    ]
+   }
+  },
+  "loglik": {
+   "configural": -143294.422,
+   "metric": -143337.237,
+   "scalar": -143454.184
+  },
+  "n_parameters": {
+   "configural": 216,
+   "metric": 176,
+   "scalar": 46
+  },
+  "BIC": {
+   "configural": 288791.2,
+   "metric": 288468.99,
+   "scalar": 287377.39
+  },
+  "AIC": {
+   "configural": 287020.84,
+   "metric": 287026.47,
+   "scalar": 287000.37
+  },
+  "metric_vs_configural": {
+   "chisq": 85.63,
+   "df": 40,
+   "p": 3.6563379687739286e-05
+  },
+  "scalar_vs_metric": {
+   "chisq": 233.89,
+   "df": 130,
+   "p": 6.215698902391812e-08
+  },
+  "BIC_preferred_model": "scalar",
+  "top_dif_item": "DPQ010",
+  "single_item_chisq": {
+   "DPQ010": 65.6,
+   "DPQ030": 38.44,
+   "DPQ040": 37.34,
+   "DPQ070": 35.11,
+   "DPQ060": 23.58,
+   "DPQ050": 22.75,
+   "DPQ090": 22.53,
+   "DPQ080": 18.51,
+   "DPQ020": 10.79
+  },
+  "max_abs_dif_points_metric": 0.0797,
+  "max_abs_dif_points_partial": 0.0734,
+  "max_implied_prevalence_shift_metric": 0.0103,
+  "max_implied_prevalence_shift_partial": 0.0042,
+  "latent_means_scalar": [
+   0.0,
+   0.0045,
+   -0.0868,
+   0.0001,
+   0.0343,
+   -0.0312
+  ],
+  "latent_sds_metric": [
+   1.0,
+   0.9553,
+   0.9859,
+   0.9323,
+   0.9024,
+   0.9352
+  ],
+  "latent_sds_scalar": [
+   1.0,
+   0.9803,
+   1.0243,
+   0.9662,
+   0.9144,
+   0.9563
+  ]
+ }
+}

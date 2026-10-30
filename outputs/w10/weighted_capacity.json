@@ -1,0 +1,7 @@
+{
+ "definition_records": "top 10% of evaluation records by predicted risk",
+ "definition_weighted": "records in descending risk until 10% of the weighted population is reviewed",
+ "max_abs_difference_pp": 4.8,
+ "mean_difference_pp": 4.17,
+ "max_abs_gain_shift_pp": 3.5999999999999996
+}

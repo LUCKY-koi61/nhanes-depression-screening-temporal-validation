@@ -1,0 +1,143 @@
+{
+ "0.05": [
+  {
+   "cycle": 2009,
+   "approve_pct": 0.0,
+   "obs_dep_approved": NaN,
+   "tau": 0.05,
+   "violation": false,
+   "pop_dep": 0.0779,
+   "positives_in_review": 100.0
+  },
+  {
+   "cycle": 2011,
+   "approve_pct": 0.0,
+   "obs_dep_approved": NaN,
+   "tau": 0.05,
+   "violation": false,
+   "pop_dep": 0.0795,
+   "positives_in_review": 100.0
+  },
+  {
+   "cycle": 2013,
+   "approve_pct": 0.0,
+   "obs_dep_approved": NaN,
+   "tau": 0.05,
+   "violation": false,
+   "pop_dep": 0.0866,
+   "positives_in_review": 100.0
+  },
+  {
+   "cycle": 2015,
+   "approve_pct": 0.0,
+   "obs_dep_approved": NaN,
+   "tau": 0.05,
+   "violation": false,
+   "pop_dep": 0.0734,
+   "positives_in_review": 100.0
+  },
+  {
+   "cycle": 2017,
+   "approve_pct": 0.0,
+   "obs_dep_approved": NaN,
+   "tau": 0.05,
+   "violation": false,
+   "pop_dep": 0.0821,
+   "positives_in_review": 100.0
+  }
+ ],
+ "0.1": [
+  {
+   "cycle": 2009,
+   "approve_pct": 94.1,
+   "obs_dep_approved": 0.0653,
+   "tau": 0.1,
+   "violation": false,
+   "pop_dep": 0.0779,
+   "positives_in_review": 21.2
+  },
+  {
+   "cycle": 2011,
+   "approve_pct": 94.9,
+   "obs_dep_approved": 0.0667,
+   "tau": 0.1,
+   "violation": false,
+   "pop_dep": 0.0795,
+   "positives_in_review": 20.5
+  },
+  {
+   "cycle": 2013,
+   "approve_pct": 94.6,
+   "obs_dep_approved": 0.0779,
+   "tau": 0.1,
+   "violation": false,
+   "pop_dep": 0.0866,
+   "positives_in_review": 14.9
+  },
+  {
+   "cycle": 2015,
+   "approve_pct": 95.2,
+   "obs_dep_approved": 0.0645,
+   "tau": 0.1,
+   "violation": false,
+   "pop_dep": 0.0734,
+   "positives_in_review": 16.4
+  },
+  {
+   "cycle": 2017,
+   "approve_pct": 95.0,
+   "obs_dep_approved": 0.0784,
+   "tau": 0.1,
+   "violation": false,
+   "pop_dep": 0.0821,
+   "positives_in_review": 9.4
+  }
+ ],
+ "0.15": [
+  {
+   "cycle": 2009,
+   "approve_pct": 100.0,
+   "obs_dep_approved": 0.0779,
+   "tau": 0.15,
+   "violation": false,
+   "pop_dep": 0.0779,
+   "positives_in_review": 0.1
+  },
+  {
+   "cycle": 2011,
+   "approve_pct": 100.0,
+   "obs_dep_approved": 0.0795,
+   "tau": 0.15,
+   "violation": false,
+   "pop_dep": 0.0795,
+   "positives_in_review": 0.1
+  },
+  {
+   "cycle": 2013,
+   "approve_pct": 100.0,
+   "obs_dep_approved": 0.0865,
+   "tau": 0.15,
+   "violation": false,
+   "pop_dep": 0.0866,
+   "positives_in_review": 0.1
+  },
+  {
+   "cycle": 2015,
+   "approve_pct": 100.0,
+   "obs_dep_approved": 0.0734,
+   "tau": 0.15,
+   "violation": false,
+   "pop_dep": 0.0734,
+   "positives_in_review": 0.0
+  },
+  {
+   "cycle": 2017,
+   "approve_pct": 100.0,
+   "obs_dep_approved": 0.0821,
+   "tau": 0.15,
+   "violation": false,
+   "pop_dep": 0.0821,
+   "positives_in_review": 0.0
+  }
+ ]
+}

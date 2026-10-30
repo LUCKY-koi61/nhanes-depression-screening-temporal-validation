@@ -1,0 +1,318 @@
+{
+ "dep10": {
+  "2011": {
+   "n": 4221,
+   "fixed_capture": 0.2689,
+   "fixed_auc": 0.747,
+   "expanding": {
+    "capture": 0.2667,
+    "gain_pp": -0.21,
+    "auc": 0.782,
+    "bootstrap": {
+     "point": -0.0021,
+     "lo": -0.0436,
+     "hi": 0.0313
+    }
+   },
+   "single_prior": {
+    "capture": 0.276,
+    "gain_pp": 0.71,
+    "auc": 0.763,
+    "bootstrap": {
+     "point": 0.0071,
+     "lo": -0.0791,
+     "hi": 0.0615
+    }
+   },
+   "matched_n": {
+    "training_n": 4652,
+    "draws": 5,
+    "capture_mean": 0.2782,
+    "gain_pp_mean": 0.93,
+    "gain_pp_min": -1.99,
+    "gain_pp_max": 4.02,
+    "auc_mean": 0.761,
+    "bootstrap": {
+     "point": -0.0019,
+     "lo": -0.0545,
+     "hi": 0.0366
+    }
+   }
+  },
+  "2013": {
+   "n": 4638,
+   "fixed_capture": 0.1968,
+   "fixed_auc": 0.718,
+   "expanding": {
+    "capture": 0.244,
+    "gain_pp": 4.72,
+    "auc": 0.718,
+    "bootstrap": {
+     "point": 0.0472,
+     "lo": 0.0189,
+     "hi": 0.0734
+    }
+   },
+   "single_prior": {
+    "capture": 0.2273,
+    "gain_pp": 3.05,
+    "auc": 0.697,
+    "bootstrap": {
+     "point": 0.0305,
+     "lo": -0.0128,
+     "hi": 0.064
+    }
+   },
+   "matched_n": {
+    "training_n": 4652,
+    "draws": 5,
+    "capture_mean": 0.2308,
+    "gain_pp_mean": 3.4,
+    "gain_pp_min": 2.3,
+    "gain_pp_max": 5.37,
+    "auc_mean": 0.701,
+    "bootstrap": {
+     "point": 0.032,
+     "lo": 0.0126,
+     "hi": 0.0564
+    }
+   }
+  },
+  "2015": {
+   "n": 4342,
+   "fixed_capture": 0.1891,
+   "fixed_auc": 0.698,
+   "expanding": {
+    "capture": 0.2116,
+    "gain_pp": 2.25,
+    "auc": 0.712,
+    "bootstrap": {
+     "point": 0.0225,
+     "lo": -0.0122,
+     "hi": 0.0652
+    }
+   },
+   "single_prior": {
+    "capture": 0.1862,
+    "gain_pp": -0.29,
+    "auc": 0.708,
+    "bootstrap": {
+     "point": -0.0029,
+     "lo": -0.0459,
+     "hi": 0.0426
+    }
+   },
+   "matched_n": {
+    "training_n": 4652,
+    "draws": 5,
+    "capture_mean": 0.1838,
+    "gain_pp_mean": -0.53,
+    "gain_pp_min": -2.2,
+    "gain_pp_max": 0.99,
+    "auc_mean": 0.684,
+    "bootstrap": {
+     "point": -0.0107,
+     "lo": -0.0582,
+     "hi": 0.0297
+    }
+   }
+  },
+  "2017": {
+   "n": 4155,
+   "fixed_capture": 0.169,
+   "fixed_auc": 0.658,
+   "expanding": {
+    "capture": 0.1902,
+    "gain_pp": 2.12,
+    "auc": 0.656,
+    "bootstrap": {
+     "point": 0.0212,
+     "lo": -0.0215,
+     "hi": 0.0572
+    }
+   },
+   "single_prior": {
+    "capture": 0.1469,
+    "gain_pp": -2.21,
+    "auc": 0.638,
+    "bootstrap": {
+     "point": -0.0221,
+     "lo": -0.0588,
+     "hi": 0.0047
+    }
+   },
+   "matched_n": {
+    "training_n": 4652,
+    "draws": 5,
+    "capture_mean": 0.1572,
+    "gain_pp_mean": -1.18,
+    "gain_pp_min": -2.84,
+    "gain_pp_max": 0.29,
+    "auc_mean": 0.637,
+    "bootstrap": {
+     "point": -0.0093,
+     "lo": -0.0468,
+     "hi": 0.0287
+    }
+   }
+  }
+ },
+ "dep5": {
+  "2011": {
+   "n": 4221,
+   "fixed_capture": 0.1761,
+   "fixed_auc": 0.675,
+   "expanding": {
+    "capture": 0.1917,
+    "gain_pp": 1.55,
+    "auc": 0.709,
+    "bootstrap": {
+     "point": 0.0155,
+     "lo": -0.0012,
+     "hi": 0.023
+    }
+   },
+   "single_prior": {
+    "capture": 0.1752,
+    "gain_pp": -0.09,
+    "auc": 0.686,
+    "bootstrap": {
+     "point": -0.0009,
+     "lo": -0.0366,
+     "hi": 0.0247
+    }
+   },
+   "matched_n": {
+    "training_n": 4652,
+    "draws": 5,
+    "capture_mean": 0.1798,
+    "gain_pp_mean": 0.36,
+    "gain_pp_min": -1.2,
+    "gain_pp_max": 1.79,
+    "auc_mean": 0.686,
+    "bootstrap": {
+     "point": 0.0179,
+     "lo": -0.0064,
+     "hi": 0.0401
+    }
+   }
+  },
+  "2013": {
+   "n": 4638,
+   "fixed_capture": 0.1467,
+   "fixed_auc": 0.638,
+   "expanding": {
+    "capture": 0.1749,
+    "gain_pp": 2.82,
+    "auc": 0.658,
+    "bootstrap": {
+     "point": 0.0282,
+     "lo": 0.012,
+     "hi": 0.0424
+    }
+   },
+   "single_prior": {
+    "capture": 0.1662,
+    "gain_pp": 1.95,
+    "auc": 0.652,
+    "bootstrap": {
+     "point": 0.0195,
+     "lo": 0.0066,
+     "hi": 0.0322
+    }
+   },
+   "matched_n": {
+    "training_n": 4652,
+    "draws": 5,
+    "capture_mean": 0.164,
+    "gain_pp_mean": 1.73,
+    "gain_pp_min": 0.49,
+    "gain_pp_max": 2.86,
+    "auc_mean": 0.641,
+    "bootstrap": {
+     "point": 0.0286,
+     "lo": 0.0165,
+     "hi": 0.0356
+    }
+   }
+  },
+  "2015": {
+   "n": 4342,
+   "fixed_capture": 0.1399,
+   "fixed_auc": 0.622,
+   "expanding": {
+    "capture": 0.1456,
+    "gain_pp": 0.57,
+    "auc": 0.656,
+    "bootstrap": {
+     "point": 0.0057,
+     "lo": -0.0042,
+     "hi": 0.0296
+    }
+   },
+   "single_prior": {
+    "capture": 0.1714,
+    "gain_pp": 3.16,
+    "auc": 0.628,
+    "bootstrap": {
+     "point": 0.0316,
+     "lo": 0.0116,
+     "hi": 0.0534
+    }
+   },
+   "matched_n": {
+    "training_n": 4652,
+    "draws": 5,
+    "capture_mean": 0.1346,
+    "gain_pp_mean": -0.52,
+    "gain_pp_min": -1.18,
+    "gain_pp_max": 0.38,
+    "auc_mean": 0.627,
+    "bootstrap": {
+     "point": 0.0038,
+     "lo": -0.0144,
+     "hi": 0.0148
+    }
+   }
+  },
+  "2017": {
+   "n": 4155,
+   "fixed_capture": 0.1219,
+   "fixed_auc": 0.637,
+   "expanding": {
+    "capture": 0.1722,
+    "gain_pp": 5.03,
+    "auc": 0.668,
+    "bootstrap": {
+     "point": 0.0503,
+     "lo": 0.0305,
+     "hi": 0.0631
+    }
+   },
+   "single_prior": {
+    "capture": 0.1694,
+    "gain_pp": 4.74,
+    "auc": 0.645,
+    "bootstrap": {
+     "point": 0.0474,
+     "lo": 0.0249,
+     "hi": 0.0704
+    }
+   },
+   "matched_n": {
+    "training_n": 4652,
+    "draws": 5,
+    "capture_mean": 0.1511,
+    "gain_pp_mean": 2.92,
+    "gain_pp_min": 1.05,
+    "gain_pp_max": 3.91,
+    "auc_mean": 0.636,
+    "bootstrap": {
+     "point": 0.0391,
+     "lo": 0.0218,
+     "hi": 0.053
+    }
+   }
+  }
+ }
+}
